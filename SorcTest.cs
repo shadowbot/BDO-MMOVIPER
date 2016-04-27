@@ -125,7 +125,7 @@ namespace SorcTestOverride
 				Absorb_Cooldown.Reset();
 			}
 			///////////////////////////////// Check Shield //////////////////////////////////////////////////////
-			if (Spell_Shield != null && Shield_Cooldown.ElapsedSeconds > Spell_Shield.Cooldown)
+			if (Spell_Shield != null && Shield_Cooldown.ElapsedMilliseconds > Spell_Shield.Cooldown)
 			{
                 MyHelper.Log.WriteLine("Shield Up!");
                 MyHelper.Input.keysDown("{QUICKSLOT3}");
